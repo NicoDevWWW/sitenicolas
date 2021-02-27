@@ -1,6 +1,5 @@
 import React, {useState} from "react";
 import './Porfolio.css';
-import FadeInAnimation from "../../components/Animation/FadeIn";
 import {
 	Card,
 	CardActionArea,
@@ -15,7 +14,7 @@ import {
 } from "@material-ui/core";
 import resumeData from "../../utils/resumeData";
 import CustomButton from "../../components/Button/Button";
-import {FaDownload, FaExternalLinkAlt} from "react-icons/all";
+import { FaExternalLinkAlt} from "react-icons/all";
 
 const Portfolio = () => {
 	const [tabValue, setTabValue] = useState('All');
@@ -57,7 +56,7 @@ const Portfolio = () => {
 										<Card className={'customCard'} onClick={() => setProjectDialog(project)}>
 											<CardActionArea>
 												<CardMedia className={'customCard_image'} image={project.image} title={project.title}>
-													<img className="img-fluid" src={project.image} />
+													<img className="img-fluid" src={project.image} alt={project.title} />
 												</CardMedia>
 												<CardContent>
 													<Typography className={'customCard_title'}>{project.title}</Typography>
@@ -81,13 +80,13 @@ const Portfolio = () => {
 					<DialogTitle className={'popup_title'}  onClose={() => setProjectDialog(false)}>
 						{projectDialog.title}
 					</DialogTitle>
-					<img src={projectDialog.image} alt={""} className={'projectDialog_image'}/>
+					<img src={projectDialog.image} alt={projectDialog.title} className={'projectDialog_image'}/>
 					<DialogContent className={'popup_content'} >
 						<Typography  className={'projectDialog_description'}>{projectDialog.description}</Typography>
 						<div className={'container_actions'}>
 							{projectDialog?.links?.map(link => (
 								<CustomButton text={link.text} icon={<FaExternalLinkAlt fontSize={'small'} />}>
-									<a href={link.link} target={"_blank"} className={'link_to_project'}>{link.text}</a>
+									<a href={link.link} rel="noreferrer" target={"_blank"} className={'link_to_project'}>{link.text}</a>
 								</CustomButton>
 							))}
 						</div>

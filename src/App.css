@@ -1,0 +1,100 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,500;1,700&display=swap');
+
+.dark_button{
+
+}
+#toggle{
+	width: 50px;
+	display: flex;
+	padding: 5px;
+	background-color: #1a202c;
+	position: fixed;
+	z-index: 22;
+	right: 5%;
+	top: 5%;
+	border-radius: 1000px;
+
+	box-shadow: 0px 5px 20px -10px #000000;
+	transition: background-color 0.2s ease-in;
+}
+.toggle-inner{
+	width: 20px;
+    height: 15px;
+    background-color: white;
+    border-radius: 1000px;
+    transition: margin-left 0.2s ease-in, background-color 0.2s ease-in;
+	cursor: pointer;
+}
+.toggle-active {
+	 margin-left: 20px;
+ }
+body{
+	font-size: 1rem;
+	font-family: 'Ubuntu', sans-serif;
+	font-weight: 200;
+}
+
+canvas {
+	display: block;
+	vertical-align: bottom;
+}
+.content-app{
+	z-index: 2;
+}
+#main #tsparticles{
+	position: fixed;
+	width: 100%;
+	display: block;
+	height: 100vh;
+	z-index: 0;
+	top: 0;
+}
+
+/* ---- particles.js container ---- */
+:root{
+	--main-color:#444444
+}
+.main_content{
+	margin-top: 3rem;
+}
+.container_shadow{
+	box-shadow: 0px 2px 92px 0px rgba(0,0,0,0.13);
+	-webkit-box-shadow: 0px 2px 92px 0px rgba(0,0,0,0.13);
+	-moz-box-shadow: 0px 2px 92px 0px rgba(0,0,0,0.13);
+}
+.wrapper_content{
+	background: white;
+	border-radius: 10px;
+	margin: 2rem 0;
+	padding: 3rem 3rem;
+	border: none;
+	width: 100%;
+}
+.section-title, .section-title h6{
+	color: black;
+	position: relative;
+	font-family: 'Ubuntu', sans-serif;
+	font-size: 1.2rem;
+	margin-bottom: 1rem;
+}
+.section-title span{
+	position: absolute;
+	height: 3px;
+	width: 100%;
+	bottom: 25%;
+	opacity: 0.4;
+	left: 0;
+	background-color: var(--main-color);
+}
+.MuiTypography-root.about_me_text:last-child{
+	color: #444444;
+	line-height: 1.5rem;
+	margin-bottom: 1.5rem;
+}
+.section .section_content{
+	margin-top: 1rem;
+}
+.scroll_button_custom{
+	font-size: 14px;
+}

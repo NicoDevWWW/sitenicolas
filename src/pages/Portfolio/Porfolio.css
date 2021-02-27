@@ -1,0 +1,60 @@
+
+.customTabs_item{
+	padding: 0;
+	color: #444444;
+	font-family: 'Ubuntu', sans-serif;
+}
+.customTabs_item.active{
+	font-weight: bold;
+	color: black;
+	border-bottom: 2px solid #444444;
+}
+
+.projectDialog_image{
+	max-width: 50%;
+	margin: auto;
+	display: block;
+}
+.custom_tabs .MuiTabs-fixed .MuiTabs-flexContainer{
+	flex-direction: row;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+.container_projects{
+	padding-top: 2rem;
+}
+
+.customCard {
+	background: white;
+}
+.customCard .MuiCardActionArea-root:hover{
+	transition: 0.2s;
+	transform: scale(1.1);
+}
+.customCard_image{
+
+}
+.MuiTypography-body1.customCard_title{
+	margin-bottom: 0.5rem;
+	font-weight: bold;
+}
+.MuiTypography-body2.customCard_caption{
+	margin-bottom: 0.5rem;
+}
+.projectDialog_button{
+	margin-right: 10px;
+}
+.popup_container{
+
+}
+.popup_title h2{
+	font-weight: bold;
+	color: #444444;
+}
+.popup_content{
+	margin: 1rem 0;
+}
+.container_actions{
+	margin-top: 1rem;
+}

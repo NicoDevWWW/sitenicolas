@@ -1,0 +1,51 @@
+.profile{
+	background: white;
+	border-radius: 10px;
+	width: 100%;
+}
+.profile_name{
+	line-height: 1.3rem;
+	padding: 1rem;
+}
+.profile_name .name{
+	text-transform: uppercase;
+	font-size: 1.5rem;
+	font-weight: bold;
+	font-family: 'Ubuntu', sans-serif;
+}
+.profile_name .title{
+	color: #444444;
+}
+.profile_image{
+	margin-top: -10px;
+	margin-right: 0;
+	margin-left: 0;
+	-webkit-clip-path:polygon(0 9%,100% 0, 100% 94%, 0 100%);
+	clip-path:polygon(0 9%,100% 0, 100% 94%, 0 100%) ;
+}
+
+.profile_image img{
+	width: 100%;
+}
+.profile_information{
+	top: 0;
+	left: 0;
+	margin: -44px 10px 30px;
+}
+.profile_information .timeline .timeline_content{
+	margin-top: 0.1rem;
+	margin-bottom: 0.2rem;
+}
+.timelineItem_text{
+	font-size: 1.2rem;
+	color: #787878;
+	font-weight: 400;
+}
+.profile .button_container{
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	padding-bottom: 2rem;
+}

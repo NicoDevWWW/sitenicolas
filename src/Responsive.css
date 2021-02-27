@@ -1,0 +1,99 @@
+
+@media screen and (width: 1024px) {
+
+}
+@media screen and (max-width: 768px) {
+	#main{
+		overflow: hidden;
+	}
+	.content_main{
+		display: flex;
+		flex-direction: column-reverse;
+	}
+	#main #page-wrap{
+		margin-top: 3rem;
+	}
+	#toggle{
+		top: 1%;
+	}
+	.bm-burger-button{
+		display: none;
+	}
+	.navbar{
+		justify-content: flex-start;
+	}
+	.navbar-collapse{
+		position: absolute;
+		top: 92%;
+		right: 0;
+		background: white;
+		width: 100%;
+		box-shadow: 10px 5px 5px var(--main-color);
+		border-radius: 0 0 10px 10px;
+		z-index: 2222;
+		padding-left: 1rem;
+	}
+	.header_right {
+		margin-right: 1rem;
+		flex: 1;
+		display: flex;
+		flex-direction: row;
+		justify-content: flex-end;
+	}
+	.navbar-collapse.collapsing{
+		position: absolute;
+	}
+	.navbar-nav{
+		padding: 2rem 0;
+	}
+	.profile .container_shadow{
+		margin-top: 2rem;
+	}
+	.content-app{
+		padding: 0 28px;
+	}
+	.section .skills_container .skill_block{
+		margin-bottom: 2rem;
+		padding-bottom: 1rem;
+		border-bottom: 1px solid var(--main-color);
+	}
+	.section .skills_container .skill_block:first-child{
+		margin-top: 1rem;
+		padding-top: 1rem;
+		border-top: 1px solid var(--main-color);
+	}
+	.skills_container .skill_block .grid_skills{
+		flex-wrap: wrap;
+		margin: 0;
+		flex-direction: row;
+	}
+	.skill_block .grid_skills .item_skill{
+		margin: 0.5rem;
+		flex: 1 1 75px;
+		text-align: left;
+	}
+	.MuiGrid-grid-xs-12 .container_services{
+		flex-direction: column;
+		margin: 0;
+	}
+	.MuiGrid-grid-xs-12 .container_services .service{
+		max-width: 100%;
+		margin: 1rem 0;
+	}
+	.content-app .footer{
+		margin: 2rem 0 0 0;
+	}
+	.MuiGrid-container .content-app{
+		margin: 0;
+		padding: 0 1rem;
+	}
+	.content-app .wrapper_content{
+		padding: 2rem 2rem;
+	}
+	.section .section_content .MuiGrid-container .MuiGrid-item .timeline{
+		padding: 6px 0;
+	}
+	.custom_tabs .MuiTabs-fixed .MuiTabs-flexContainer{
+		flex-wrap: wrap;
+	}
+}

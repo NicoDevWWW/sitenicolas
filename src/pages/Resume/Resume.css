@@ -1,0 +1,57 @@
+.section_about{
+
+}
+.section .section_content.work_school{
+	padding-top: 1rem;
+}
+.about_me_text{
+	margin: 1rem 0;
+}
+.timeline_content .timeline_title{
+	font-size: 1.1rem;
+	font-weight: bold;
+}
+.timeline_content .timeline_date, .timeline_content .timeline_description{
+	display: block;
+	width: 100%;
+}
+.container_services{
+	justify-content: space-between;
+	margin: 2rem 0;
+}
+.container_services .service{
+	padding: 1rem;
+	background: white;
+	max-width: 20%;
+    flex-basis: 20%;
+	color: #444444;
+	border-radius: 10px;
+	border: 0px solid #444444;
+	box-shadow: 0px 2px 92px 0px rgba(0,0,0,0.13);
+	-webkit-box-shadow: 0px 2px 92px 0px rgba(0,0,0,0.13);
+	-moz-box-shadow: 0px 2px 92px 0px rgba(0,0,0,0.13);
+}
+.service_content .service_icon{
+	font-size: 2rem;
+}
+.grid_skills{
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+	margin: 2rem 0;
+}
+.grid_skills .item_skill{
+	font-size: 3rem;
+	color: #444444;
+	display: block;
+	text-align: center;
+}
+.item_skill_title{
+	font-size: 1rem;
+}
+.skills_container .skill_block{
+	margin-bottom: 4rem;
+}
+.content_after{
+	padding-top: 1rem;
+}

@@ -1,0 +1,20 @@
+.scroll-to-top {
+	position: fixed;
+	bottom: 0.5rem;
+	right: 1rem;
+	animation: fadeIn 700ms ease-in-out 1s both;
+	cursor: pointer;
+}
+.arrow_up{
+	font-size: 2rem;
+	color: var(--main-color);
+}
+
+@keyframes fadeIn {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}

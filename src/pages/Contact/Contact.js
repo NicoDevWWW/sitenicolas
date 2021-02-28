@@ -2,17 +2,9 @@ import React from "react";
 import './contact.css'
 import {Grid, TextField, Typography} from "@material-ui/core";
 import CustomButton from "../../components/Button/Button";
-import {useState} from "react";
-import {useEffect} from "react";
+import {FaDownload, FaEnvelope, FaLinkedin, FaMailBulk, FaPaperPlane} from "react-icons/all";
 
 const Contact = () => {
-	const [success, setSuccess] = useState(false);
-
-	useEffect(() => {
-		if ( window.location.search.includes('success=true') ) {
-			setSuccess(true);
-		}
-	}, []);
 	return(
 		<div className={'main_contact'}>
 			<Grid container className={'section'}>
@@ -22,32 +14,20 @@ const Contact = () => {
 							<span></span>
 							<Typography variant={'h6'} >Contactez moi</Typography>
 						</Grid>
-						{success && (
-							<p style={{ color: "green" }}>Thanks for your message! </p>
-						)}
 					</Grid>
-					<Grid item>
-						<form
-							name="contact"
-							method="POST"
-							data-netlify="true"
-						>
-							<input type="hidden" name="form-name" value="contact" />
-							<Grid container spacing={5}>
-								<Grid item xs={12} sm={6}>
-									<TextField fullWidth name='name' label='Name'/>
+					<Grid item className={'container_contact_content'}>
+							<Grid container spacing={5} className={"container_actions_contact"}>
+								<Grid item xs={12} sm={6} className={'contact_item'}>
+									<a href={"mailto:nicolas.squeren@gmail.com"}>
+										<CustomButton text={'Par email'} icon={<FaPaperPlane fontSize={'small'} />} />
+									</a>
 								</Grid>
-								<Grid item xs={12} sm={6}>
-									<TextField fullWidth name='email' label='Email'/>
-								</Grid>
-								<Grid item xs={12} >
-									<TextField fullWidth name='message' label='Message' multiline rows={4}/>
-								</Grid>
-								<Grid item xs={12}>
-									<CustomButton text={'Envoyer'} type={"submit"}/>
+								<Grid item xs={12} sm={6} className={'contact_item'}>
+									<a href={"https://www.linkedin.com/in/nicolas-squeren/"} target={"_blank"}>
+										<CustomButton text={'Sur linkedin'} icon={<FaPaperPlane fontSize={'small'} />} />
+									</a>
 								</Grid>
 							</Grid>
-						</form>
 					</Grid>
 				</Grid>
 			</Grid>

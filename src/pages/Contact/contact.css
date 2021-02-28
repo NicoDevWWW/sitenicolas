@@ -1,3 +1,12 @@
 .main_contact{
 
 }
+.container_contact_content .container_actions_contact{
+	margin-top: 2rem;
+}
+.container_actions_contact .contact_item{
+	margin: auto;
+}
+.container_actions_contact .contact_item a:hover{
+	text-decoration: none;
+}

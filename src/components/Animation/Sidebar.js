@@ -48,7 +48,7 @@ class Sidebar extends React.Component{
 					to="/"
 					className={' menu-item'}>
 					<FaAddressCard className={'menu_icon'}/>
-					<span>Resume</span>
+					<span>Résumé</span>
 				</Nav.Link>
 				<Nav.Link
 					onClick={() => this.closeMenu()}
@@ -56,7 +56,7 @@ class Sidebar extends React.Component{
 					to="/skills"
 					className={' menu-item'}>
 					<FaCodeBranch className={'menu_icon'}/>
-					<span>Skills</span>
+					<span>Compétences</span>
 				</Nav.Link>
 				<Nav.Link
 					onClick={() => this.closeMenu()}

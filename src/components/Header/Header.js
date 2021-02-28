@@ -21,13 +21,13 @@ class Header extends React.Component {
 								as={NavLink}
 								to="/"
 								className={'header_link'} eventKey="1" >
-								Resume
+								Résumé
 							</Nav.Link>
 							<Nav.Link
 								as={NavLink}
 								to="/skills"
 								className={'header_link'} eventKey="2" >
-								Skills
+								Compétences
 							</Nav.Link>
 							<Nav.Link
 								as={NavLink}

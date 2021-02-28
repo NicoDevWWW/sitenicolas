@@ -49,3 +49,24 @@
 	justify-content: center;
 	padding-bottom: 2rem;
 }
+.MuiTimelineItem-root.custom_timeline_link{
+	display: flex;
+	position: relative;
+	list-style: none;
+	min-height: 50px;
+}
+.timeline_link_profile{
+	color: var(--main-color);
+}
+.profile_link_title{
+	display: flex;
+    flex-direction: row;
+	align-items: center;
+}
+.profile_icon_title{
+	margin-left: 0.5rem;
+	line-height: 1rem;
+}
+.timeline_link_profile:hover{
+	color: var(--main-color);
+}

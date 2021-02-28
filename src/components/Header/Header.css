@@ -5,18 +5,18 @@
 	padding: 0;
 	border:none;
 }
-.header .header_link,.header .header_link.nav-link.active{
+.header .header_link{
 	font-family: 'Ubuntu', sans-serif;
 	color: #444444;
 	font-weight: inherit;
 }
+.header .header_link.nav-link.active{
+	font-family: 'Ubuntu', sans-serif;
+	color: #444444;
+	font-weight: bold;
+}
 .header .header_link:hover{
 	font-family: 'Ubuntu', sans-serif;
-	color: black;
-}
-.header .header_link_active.nav-link.active{
-	font-family: 'Ubuntu', sans-serif;
-	font-weight: bold;
 	color: black;
 }
 .header_link_home{
@@ -46,6 +46,9 @@
 }
 .nav-item-social:first-child{
 	margin-right: 1rem;
+}
+.nav-item-social:nth-child(2){
+	margin-right: 0.7rem;
 }
 .nav-item-social:hover{
 	font-size: 1.5rem;

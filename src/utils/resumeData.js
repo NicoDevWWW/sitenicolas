@@ -36,14 +36,21 @@ import babylist from "../assets/images/portfolio/babylist.png";
 import pickleball from "../assets/images/portfolio/pickleball.png";
 import obesitaide from "../assets/images/portfolio/obesitaide.png";
 import ciseaux from "../assets/images/portfolio/auxciseauxdenort.png";
+import {FaEnvelope} from "react-icons/all";
 export default {
 	name : 'Nicolas SQUEREN',
 	title: 'Développeur Web',
 	birthday: '4 Juillet 1985',
+	car: 'Permis B et A',
 	email: 'nicolas.squeren@gmail.com',
 	address: 'Nantes sud',
 	phone: '06 61 57 10 76',
 	socials: {
+		email: {
+			link: 'mailto:nicolas.squeren@gmail.com',
+			text: 'Email',
+			icon: <FaEnvelope className={'social-icon'}/>
+		},
 		linkedin: {
 			link: 'https://www.linkedin.com/in/nicolas-squeren/',
 			text: 'Linkedin',

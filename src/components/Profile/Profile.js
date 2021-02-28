@@ -6,8 +6,9 @@ import "./Profile.css";
 import resumeData from "../../utils/resumeData";
 import {TimelineContent, TimelineItem} from "@material-ui/lab";
 import {Typography} from "@material-ui/core";
-import CustomButton from '../Button/Button'
-import {FaDownload} from "react-icons/all";
+import TimelineSeparator from "@material-ui/lab/TimelineSeparator";
+import TimelineDot from "@material-ui/lab/TimelineDot";
+import TimelineConnector from "@material-ui/lab/TimelineConnector";
 
 const CustomTimelineItem = ({title, text, link}) => {
 	return(
@@ -40,14 +41,29 @@ const Profile = () => {
 					<CustomTimeline icon={<FaUser/>} >
 						<CustomTimelineItem title="Name" text={resumeData.name}/>
 						<CustomTimelineItem title="Title" text={resumeData.birthday}/>
-						<CustomTimelineItem title="Email" text={resumeData.email}/>
+						<CustomTimelineItem title="Title" text={resumeData.car}/>
 						{Object.keys(resumeData.socials).map(key =>(
-							<CustomTimelineItem title={key} text={resumeData.socials[key].text} link={resumeData.socials[key].link } />
+							// <CustomTimelineItem  key={resumeData.socials[key].text}  title={key} text= link={resumeData.socials[key].link }
+							//  class='profile_link'
+							// />
+							<TimelineItem className={"custom_timeline_link"}>
+							<TimelineSeparator className={'separator_padding'}>
+							<TimelineDot variant={'outlined'} className={'timeline_dot'} />
+							<TimelineConnector /></TimelineSeparator>
+							<TimelineContent className={'timeline_content'}>
+								<a  href={resumeData.socials[key].link } className={'timeline_link_profile'}>
+									<Typography className={'profile_link_title'}>{resumeData.socials[key].text}
+										<span className={'profile_icon_title'}>{resumeData.socials[key].icon}</span>
+									</Typography>
+								</a>
+							</TimelineContent>
+							</TimelineItem>
 						))}
 					</CustomTimeline>
-					<div className={'button_container'}>
-						<CustomButton text={'Download Cv'} icon={<FaDownload fontSize={'small'} />} >my button</CustomButton>
-					</div>
+
+					{/*<div className={'button_container'}>*/}
+					{/*	<CustomButton text={'Download Cv'} icon={<FaDownload fontSize={'small'} />} ></CustomButton>*/}
+					{/*</div>*/}
 				</div>
 			</div>
 		</div>

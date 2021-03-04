@@ -85,9 +85,11 @@ const Portfolio = () => {
 						<Typography  className={'projectDialog_description'}>{projectDialog.description}</Typography>
 						<div className={'container_actions'}>
 							{projectDialog?.links?.map(link => (
+								<a href={link.link} rel="noreferrer" target={"_blank"} className={'link_to_project'}>
 								<CustomButton text={link.text} icon={<FaExternalLinkAlt fontSize={'small'} />}>
-									<a href={link.link} rel="noreferrer" target={"_blank"} className={'link_to_project'}>{link.text}</a>
+									{link.text}
 								</CustomButton>
+								</a>
 							))}
 						</div>
 					</DialogContent>

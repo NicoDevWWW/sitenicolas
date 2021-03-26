@@ -32,7 +32,7 @@ import bdbBlog from "../assets/images/portfolio/Refonte bdb Blog.png";
 import bdbM1 from "../assets/images/portfolio/refonte bdb M1.png";
 import jjM2 from "../assets/images/portfolio/jj refont M2.png";
 import strapi from "../assets/images/portfolio/strapi restaurants.png";
-import babylist from "../assets/images/portfolio/babylist.png";
+import babylist from "../assets/images/portfolio/Babyliste.png";
 import pickleball from "../assets/images/portfolio/pickleball.png";
 import obesitaide from "../assets/images/portfolio/obesitaide.png";
 import ciseaux from "../assets/images/portfolio/auxciseauxdenort.png";
@@ -254,6 +254,25 @@ export default {
 	],
 	projects: [
 		{
+			tag: 'Symfony',
+			image: babylist,
+			title:'Création d\'une application Symfony ',
+			caption: 'Développement d\'un site de création de liste de naissance, Back et Front.',
+			date: 'Fevrier 2021',
+			description: 'Développement d\'un site en local avec Symfony. Création de compte pour créer une liste de niassance, ajouter des objets dans la liste.',
+			technos: [
+				{icon : <FaSymfony/>},
+				{icon : <FaHtml5/>},
+				{icon : <FaCss3/>},
+				{icon : <FaPhp/>},
+				{icon : <FaDatabase/>},
+			],
+			links:[
+				{link:'https://github.com/nicolassqueren/babylist', text: "Voir le depot Git"},
+				{link:'https://www.mybabyliste.fr', text: "Voir le site"},
+			]
+		},
+		{
 			tag: 'Headless',
 			image: strapi,
 			title:'Création d\'un site Headless ',
@@ -270,24 +289,6 @@ export default {
 			],
 			links:[
 				{link:'https://github.com/NicoDevWWW', text: "Voir le depot Git"},
-			]
-		},
-		{
-			tag: 'Symfony',
-			image: babylist,
-			title:'Création d\'une application Symfony ',
-			caption: 'Développement d\'un site de création de liste de naissance, Back et Front.',
-			date: 'Fevrier 2021',
-			description: 'Développement d\'un site en local avec Symfony. Création de compte pour créer une liste de niassance, ajouter des objets dans la liste.',
-			technos: [
-				{icon : <FaSymfony/>},
-				{icon : <FaHtml5/>},
-				{icon : <FaCss3/>},
-				{icon : <FaPhp/>},
-				{icon : <FaDatabase/>},
-			],
-			links:[
-				{link:'https://github.com/nicolassqueren/babylist', text: "Voir le depot Git"},
 			]
 		},
 		{

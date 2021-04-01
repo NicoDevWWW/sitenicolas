@@ -52,8 +52,8 @@ const Profile = () => {
 							<TimelineConnector /></TimelineSeparator>
 							<TimelineContent className={'timeline_content'}>
 								<a  href={resumeData.socials[key].link } className={'timeline_link_profile'}>
-									<Typography className={'profile_link_title'}>{resumeData.socials[key].text}
-										<span className={'profile_icon_title'}>{resumeData.socials[key].icon}</span>
+									<Typography className={'profile_link_title timelineItem_text'}>{resumeData.socials[key].text}
+										<span className={'profile_icon_title timelineItem_text'}>{resumeData.socials[key].icon}</span>
 									</Typography>
 								</a>
 							</TimelineContent>

@@ -315,7 +315,7 @@ export default {
 			title:'Création d\'un site E-commerce',
 			caption: 'Développement d\'un thème personnalisé sous Magento 2 Equipe de 3 développeurs, en autonomie coté Front.',
 			date: 'Juin 2020',
-			description: 'Développement d\'un thème personnalisé sous Wordpress en respectant charte graphique et maquette fournis par la designer',
+			description: 'Développement d\'un thème personnalisé sous Magento 2 en respectant charte graphique et maquette fournis par la designer . Création de moduls spécifiques avec entrée en back-end, configuration et design pour répondre aux besoins.',
 			technos: [
 				{icon : <FaMagento/>},
 				{icon : <FaHtml5/>},

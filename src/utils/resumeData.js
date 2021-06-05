@@ -31,6 +31,7 @@ import {
 import bdbBlog from "../assets/images/portfolio/Refonte bdb Blog.png";
 import bdbM1 from "../assets/images/portfolio/refonte bdb M1.png";
 import jjM2 from "../assets/images/portfolio/jj refont M2.png";
+import bdbM2 from "../assets/images/portfolio/bdbportfolio.png";
 import strapi from "../assets/images/portfolio/strapi restaurants.png";
 import babylist from "../assets/images/portfolio/Babyliste.png";
 import pickleball from "../assets/images/portfolio/pickleball.png";
@@ -253,6 +254,29 @@ export default {
 		},
 	],
 	projects: [
+		{
+			tag: 'Magento 2',
+			image: bdbM2,
+			title:'Création d\'un site E-commerce',
+			caption: 'Développement d\'un thème personnalisé et de modules sous Magento 2 Equipe de 3 développeurs.',
+			date: 'Juin 2021',
+			description: 'Développement d\'un thème personnalisé sous Magento 2 en respectant charte graphique et maquette fournis par la designer . Création de moduls spécifiques avec entrée en back-end, configuration et design pour répondre aux besoins.',
+			technos: [
+				{icon : <FaMagento/>},
+				{icon : <FaHtml5/>},
+				{icon : <FaCss3/>},
+				{icon : <FaLess/>},
+				{icon : <FaJsSquare/>},
+				{icon : <FaPhp/>},
+				{icon : <FaDatabase/>},
+				{icon : <FaGit/>},
+				{icon : <FaGitlab/>},
+				{icon : <FaDocker/>},
+			],
+			links:[
+				{link:'https://www.bonhommedebois.com', text: "Voir le site"},
+			]
+		},
 		{
 			tag: 'Symfony',
 			image: babylist,
